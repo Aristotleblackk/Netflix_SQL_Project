@@ -82,7 +82,7 @@ SELECT *
 FROM netflix
 WHERE TYPE = 'Movie' AND release_year = '2021';
 ```
---4. Find the top 5 countries with the most content on netflix
+### 4. Find the top 5 countries with the most content on netflix
 ```sql
 SELECT
 		UNNEST (STRING_TO_ARRAY(country, ',')) as new_country, 
